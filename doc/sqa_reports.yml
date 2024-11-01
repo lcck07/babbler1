@@ -1,6 +1,27 @@
 Applications:
     babbler1:
         app_types:
-            - babbler1App
+            - babbler1
         content_directory: ${ROOT_DIR}/doc/content
+        remove:
+            - ${MOOSE_DIR}/framework/doc/remove.yml
         log_default: WARNING
+        show_warning: false
+
+Documents:
+    software_requirements_specification: sqa/babbler1_srs.md
+    software_design_description: sqa/babbler1_sdd.md
+    software_test_plan: sqa/babbler1_stp.md
+    requirements_traceability_matrix: sqa/babbler1_rtm.md
+    verification_validation_report: sqa/babbler1_vvr.md
+    failure_analysis_report: sqa/babbler1_far.md
+    software_library_list: sqa/babbler1_sll.md
+    log_default: WARNING
+    show_warning: false
+
+Requirements:
+    babbler1:
+        directories:
+            - ${ROOT_DIR}/test
+        log_default: WARNING
+        show_warning: false

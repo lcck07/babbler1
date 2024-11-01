@@ -1,0 +1,9 @@
+directories:
+    - ${ROOT_DIR}/test/tests
+specs:
+    - tests
+dependencies:
+    - framework
+repos:
+    default: https://github.com/lcck07/babbler1 (push)
+reports: !include ${ROOT_DIR}/doc/sqa_reports.yml
